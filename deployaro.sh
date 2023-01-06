@@ -81,7 +81,7 @@ while getopts "s:pux:d" arg; do
          --master-subnet $masterSubnet \
          --worker-subnet $workerSubnet \
       
-      if [$? -ne 0];
+      if [ $? -ne 0 ];
       then
         echo ""
         echo "Something went wrong"
@@ -101,7 +101,7 @@ while getopts "s:pux:d" arg; do
          --name $domain \
          --resource-group $aroResourceGroup
 	 
-      if [$? -ne 0];
+      if [ $? -ne 0 ];
       then
         echo ""
         echo "Something went wrong"
@@ -194,7 +194,7 @@ while getopts "s:pux:d" arg; do
          --apiserver-visibility Private \
          --ingress-visibility Private
 
-      if [$? -ne 0];
+      if [ $? -ne 0 ];
       then
         echo ""
         echo "Something went wrong"
@@ -214,7 +214,7 @@ while getopts "s:pux:d" arg; do
          --name $domain \
          --resource-group $aroResourceGroup
 	 
-      if [$? -ne 0];
+      if [ $? -ne 0 ];
       then
         echo ""
         echo "Something went wrong"
@@ -307,7 +307,7 @@ while getopts "s:pux:d" arg; do
          --worker-subnet $workerSubnet \
          --pull-secret @$secretPath \
      
-      if [$? -ne 0];
+      if [ $? -ne 0 ];
       then
         echo ""
 	echo "Something went wrong"
@@ -327,7 +327,7 @@ while getopts "s:pux:d" arg; do
          --name $domain \
          --resource-group $aroResourceGroup
 	 
-      if [$? -ne 0];
+      if [ $? -ne 0 ];
       then
         echo ""
         echo "Something went wrong"
@@ -424,7 +424,7 @@ while getopts "s:pux:d" arg; do
          --apiserver-visibility Private \
          --ingress-visibility Private
       
-      if [$? -ne 0];
+      if [ $? -ne 0 ];
       then
         echo ""
         echo "Something went wrong"
@@ -444,7 +444,7 @@ while getopts "s:pux:d" arg; do
          --name $domain \
          --resource-group $aroResourceGroup
 	 
-      if [$? -ne 0];
+      if [ $? -ne 0 ];
       then
         echo ""
         echo "Something went wrong"
