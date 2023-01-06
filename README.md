@@ -2,7 +2,7 @@
 
 ## Automation for a quick and simple ARO deployment
 
-*Make sure you have already used az login*
+*Make sure you have already run az login*
 
 ### How to install it and run
 
