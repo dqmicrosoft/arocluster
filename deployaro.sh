@@ -100,7 +100,20 @@ while getopts "s:pux:d" arg; do
       az aro list-credentials \
          --name $domain \
          --resource-group $aroResourceGroup
-
+	 
+      if [$? -ne 0];
+      then
+        echo ""
+        echo "Something went wrong"
+        echo ""
+        echo "Check the status of your cluster"
+	echo ""
+        az aro list
+	echo ""
+	echo "If needed run ./deployaro.sh -d to restart again"
+        exit
+      fi
+      
       echo ""
       echo "Login here in the console"
       echo ""
@@ -200,7 +213,19 @@ while getopts "s:pux:d" arg; do
       az aro list-credentials \
          --name $domain \
          --resource-group $aroResourceGroup
-
+	 
+      if [$? -ne 0];
+      then
+        echo ""
+        echo "Something went wrong"
+        echo ""
+        echo "Check the status of your cluster"
+	echo ""
+        az aro list
+	echo ""
+	echo "If needed run ./deployaro.sh -d to restart again"
+        exit
+      fi
       echo ""
       echo "Login here in the console"
       echo ""
@@ -301,6 +326,19 @@ while getopts "s:pux:d" arg; do
       az aro list-credentials \
          --name $domain \
          --resource-group $aroResourceGroup
+	 
+      if [$? -ne 0];
+      then
+        echo ""
+        echo "Something went wrong"
+        echo ""
+        echo "Check the status of your cluster"
+	echo ""
+        az aro list
+	echo ""
+	echo "If needed run ./deployaro.sh -d to restart again"
+        exit
+      fi
 
       echo ""
       echo "Login here in the console"
@@ -405,7 +443,20 @@ while getopts "s:pux:d" arg; do
       az aro list-credentials \
          --name $domain \
          --resource-group $aroResourceGroup
-
+	 
+      if [$? -ne 0];
+      then
+        echo ""
+        echo "Something went wrong"
+        echo ""
+        echo "Check the status of your cluster"
+	echo ""
+        az aro list
+	echo ""
+	echo "If needed run ./deployaro.sh -d to restart again"
+        exit
+      fi
+      
       echo ""
       echo "Login here in the console"
       echo ""
