@@ -13,6 +13,20 @@ chmod +x deployaro.sh
 ./deployaro.sh
 ```
 
+### The output after creation will beÇ
+```sh
+Here are the credentials
+
+KubeadminPassword        KubeadminUsername
+-----------------------  -------------------
+q39Vk-HVQ8D-BqATH-pkEBS  kubeadmin
+
+Login here in the console
+https://console-openshift-console.apps.nmaoi3cv.westeurope.aroapp.io/
+Or use CLI *you have to have it installed*
+oc login https://api.nmaoi3cv.westeurope.aroapp.io:6443/ -u kubeadmin -p <kubeadmin password>
+```
+
 Create cluster simple for tests (uncomplicated)
 ```sh
 ./deployaro.sh -u 
