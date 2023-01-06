@@ -115,7 +115,7 @@ while getopts "s:pux:d" arg; do
       fi
       
       echo ""
-      echo "Login here in the console"
+      echo "Login the console"
       echo ""
 
       az aro show \
@@ -227,7 +227,7 @@ while getopts "s:pux:d" arg; do
         exit
       fi
       echo ""
-      echo "Login here in the console"
+      echo "Login the console"
       echo ""
 
       az aro show \
@@ -341,7 +341,7 @@ while getopts "s:pux:d" arg; do
       fi
 
       echo ""
-      echo "Login here in the console"
+      echo "Login the console"
       echo ""
 
       az aro show \
@@ -458,7 +458,7 @@ while getopts "s:pux:d" arg; do
       fi
       
       echo ""
-      echo "Login here in the console"
+      echo "Login the console"
       echo ""
 
       az aro show \
