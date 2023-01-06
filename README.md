@@ -4,7 +4,7 @@
 
 *Make sure you have already used az login*
 
-### How to use install it and run
+### How to install it and run
 
 ```sh
 git clone https://github.com/dqmicrosoft/arocluster.git
