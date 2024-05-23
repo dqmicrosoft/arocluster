@@ -79,7 +79,7 @@ while getopts "s:pux:d" arg; do
          --name $domain \
          --vnet $vnetName \
          --master-subnet $masterSubnet \
-         --worker-subnet $workerSubnet \
+         --worker-subnet $workerSubnet 
       
       if [ $? -ne 0 ];
       then
